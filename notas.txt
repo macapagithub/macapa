@@ -1,0 +1,5 @@
+ Primero importar en el archivo urls.py  del proyecto:
+ from django.conf.urls.static import static 
+Luego poner el siguiente código en el mismo archivo urls.py  del proyecto,  
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ El proyecto es la carpeta principal, donde esta también el archivo settings .py
